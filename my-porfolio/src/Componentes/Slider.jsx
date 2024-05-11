@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import "../styles/Slider.scss";
 import imageS1 from './assets/Project1.webp';
 import imageS2 from './assets/Project2.webp';
-import imageS3 from './assets/Project2.webp';
+import imageS3 from './assets/Project3.webp';
 
 function Slider() {
     const [activeImage, setActiveImage] = useState("S1");
