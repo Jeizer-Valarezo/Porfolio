@@ -1,0 +1,45 @@
+.sliderWrapper {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.slider {
+  display: flex;
+  aspect-ratio: 16 / 9;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0.25rem 0.5rem #21212126;
+  border-radius: 0.5rem;
+}
+.slider img {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.slider img.active {
+  opacity: 1; // La imagen activa es completamente visible
+}
+
+.slider-nav {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.slider-nav a {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+.slider-nav a:hover {
+  opacity: 100%;
+}

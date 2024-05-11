@@ -1,0 +1,58 @@
+.profile-container {
+  display: flex;
+  align-items: center; // Alinea los elementos verticalmente en el centro
+  justify-content: space-between; // Distribuye el espacio entre los elementos
+  color: white;
+
+  .profile-photo,
+  .cv {
+    flex: 0 0 150px; // Asigna un ancho fijo de 150px
+    display: flex;
+    flex-direction: column;
+    align-items: center; // Centra los contenidos de cada div verticalmente y horizontalmente
+
+    img {
+      width: 150px;
+      height: 150px;
+      background-color: #fff;
+    }
+  }
+
+  .profile-content {
+    flex-grow: 1; // Ocupa el espacio restante
+    display: flex;
+    flex-direction: column;
+    align-items: center; // Centra los contenidos verticalmente y horizontalmente
+
+    h1,
+    h2,
+    p {
+      margin: 0; // Elimina los márgenes por defecto para h1, h2 y p
+      text-align: center; // Centra el texto horizontalmente
+    }
+
+    h2 {
+      color: #b20000; // Color específico para h2
+    }
+
+    p {
+      margin-top: 10px; // Espacio superior para los párrafos
+    }
+  }
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    align-items: stretch;
+    .profile-photo,
+    .cv {
+      order: -1; // Mueve estos elementos al principio
+      flex: 0 0 auto; // Permite que el tamaño se ajuste al contenido
+      width: 100%; // Ocupa todo el ancho disponible
+    }
+
+    .profile-content {
+      order: 1; // Mueve este elemento al final
+      width: 100%; // Ocupa todo el ancho disponible
+    }
+  }
+}

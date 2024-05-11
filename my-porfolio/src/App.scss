@@ -1,0 +1,40 @@
+.App {
+  font-family: "Arial", sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  background-color: #410000;
+}
+.content{
+  max-width: 1200px;
+  background-color: #444;
+  margin: 0 auto; // Centra el contenido horizontalmente
+}
+
+header,
+footer {
+  
+  
+  text-align: center;
+}
+
+section {
+  margin: 20px;
+  padding: 20px;
+  
+}
+
+
+.projects,
+.about,
+.skills {
+  h2 {
+    text-align: center;
+  }
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
