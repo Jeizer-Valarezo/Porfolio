@@ -1,3 +1,41 @@
+:root {
+	--duracion-animacion: 2500ms;
+	--angulo-rotacion: 90deg;
+	--gradiente-x: 100%;
+	--gradiente-y: 50%;
+	--color-rojo: rgb(255, 0, 0);
+	--color2: rgba(0, 0, 0, 0);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+@property --angulo-rotacion {
+  syntax: '<angle>';
+  initial-value: 90deg;
+  inherits: true;
+}
+
+@property --gradiente-x {
+  syntax: '<percentage>';
+  initial-value: 100%;
+  inherits: true;
+}
+
+@property --gradiente-y {
+  syntax: '<percentage>';
+  initial-value: 50%;
+  inherits: true;
+}
+
+
+@keyframes rotacionBorde {
+	100% {
+		--angulo-rotacion: 480deg;
+	}
+}
+
 .sliderWrapper {
   position: relative;
   max-width: 1000px;
@@ -11,6 +49,9 @@
   scroll-behavior: smooth;
   box-shadow: 0.25rem 0.5rem #21212126;
   border-radius: 0.5rem;
+  border: 0.35rem solid;
+	border-image: conic-gradient(from var(--angulo-rotacion), var(--color2), var(--color-rojo) 0.1turn, var(--color-rojo) 0.15turn, var(--color2) 0.25turn) 30;
+	animation: rotacionBorde var(--duracion-animacion) linear infinite forwards;
 }
 .slider img {
   flex: 1 0 100%;
