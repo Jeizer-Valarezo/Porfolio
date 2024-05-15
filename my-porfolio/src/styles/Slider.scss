@@ -1,15 +1,4 @@
-:root {
-	--duracion-animacion: 2500ms;
-	--angulo-rotacion: 90deg;
-	--gradiente-x: 100%;
-	--gradiente-y: 50%;
-	--color-rojo: rgb(255, 0, 0);
-	--color2: rgba(0, 0, 0, 0);
-}
 
-* {
-	box-sizing: border-box;
-}
 
 @property --angulo-rotacion {
   syntax: '<angle>';
@@ -32,7 +21,7 @@
 
 @keyframes rotacionBorde {
 	100% {
-		--angulo-rotacion: 480deg;
+		--angulo-rotacion: 800deg;
 	}
 }
 
@@ -41,7 +30,7 @@
   max-width: 1000px;
   margin: 0 auto;
 }
-.slider {
+.slider-images {
   display: flex;
   aspect-ratio: 16 / 9;
   overflow-x: hidden;
@@ -50,10 +39,10 @@
   box-shadow: 0.25rem 0.5rem #21212126;
   border-radius: 0.5rem;
   border: 0.35rem solid;
-	border-image: conic-gradient(from var(--angulo-rotacion), var(--color2), var(--color-rojo) 0.1turn, var(--color-rojo) 0.15turn, var(--color2) 0.25turn) 30;
-	animation: rotacionBorde var(--duracion-animacion) linear infinite forwards;
+	border-image: conic-gradient(from var(--angulo-rotacion), var(--transparente), var(--color-principal) 0.1turn, var(--color-principal) 0.15turn, var(--transparente) 0.25turn) 30;
+	animation: rotacionBorde var(--duracion-animacion) linear infinite;
 }
-.slider img {
+.slider-images img {
   flex: 1 0 100%;
   scroll-snap-align: start;
   object-fit: cover;
@@ -61,7 +50,7 @@
   transition: opacity 0.5s ease-in-out;
 }
 .slider img.active {
-  opacity: 1; // La imagen activa es completamente visible
+  opacity: 1; 
 }
 
 .slider-nav {

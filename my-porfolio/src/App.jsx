@@ -5,27 +5,28 @@ import ProjectList from "./Componentes/ProjectList";
 import AboutContent from "./Componentes/AboutContent";
 import SkillsList from "./Componentes/SkillsList";
 import ContactInfo from "./Componentes/ContactInfo";
+import TitulosSecciones from "./Componentes/TitulosSecciones";
 
 function App() {
   return (
     <div className="App">
       <div className="content">
-        <header>
+        <section className="slider">
           <Slider />
-        </header>
+        </section>
         <section className="profile">
           <ProfileData />
         </section>
         <section className="projects">
-          <h2>Proyectos</h2>
+          <TitulosSecciones titulo="Proyectos" />
           <ProjectList />
         </section>
         <section className="about">
-          <h2>Sobre mí</h2>
+        <TitulosSecciones titulo="Sobre mi" />
           <AboutContent />
         </section>
         <section className="skills">
-          <h2>Tecnologías</h2>
+          <TitulosSecciones titulo="Tecnologias"/>
           <SkillsList />
         </section>
         <footer>

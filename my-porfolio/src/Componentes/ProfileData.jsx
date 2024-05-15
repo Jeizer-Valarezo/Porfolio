@@ -1,5 +1,6 @@
-import React from 'react';
-import '../styles/ProfileData.scss';
+import React from "react";
+import "../styles/ProfileData.scss";
+import FullStackTitle from "./FullStackTitle";
 
 function ProfileData() {
   return (
@@ -8,13 +9,20 @@ function ProfileData() {
         <img src="path_to_your_photo.jpg" alt="Foto de Mauricio" />
       </div>
       <div className="profile-content">
-        <h1>Mauricio Con Peso</h1>
-        <h2>Full Stack Developer</h2>
-        <p>Soy un apasionado por la tecnología y por los porros, pero más por los porros.</p>
-        <p>"MÁXIMA EFICIENCIA, MÍNIMO ESFUERZO"</p>
+        <FullStackTitle />
+        <p>
+        Mi nombre es Jeizer y soy <span className="p">Desarrollador Full Stack</span>. Cuento con experiencia en diversos proyectos 
+        donde he desempeñado el rol de <span className="s">líder de equipo</span>, guiando a mis colegas mediante el uso de metodologías ágiles.
+        </p>
+        <p>Como desarrollador, comprendo que es fundamental mantenerse actualizado y trabajar de manera eficiente,
+        evitando reinventar la rueda. Por ello, mi lema de vida es:</p>
+        <p><span className="s">"Máxima eficiencia con el mínimo esfuerzo"</span></p>
+        
       </div>
       <div className="cv">
-        <button onClick={() => window.open("/Cv.pdf", "_blank")}>Ver mi CV</button>
+        <button onClick={() => window.open("/Cv.pdf", "_blank")}>
+          Ver mi CV
+        </button>
       </div>
     </div>
   );

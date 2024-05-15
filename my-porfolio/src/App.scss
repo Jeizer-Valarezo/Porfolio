@@ -1,3 +1,13 @@
+:root {
+	--duracion-animacion: 10000ms;
+	--angulo-rotacion: 90deg;
+	--gradiente-x: 100%;
+	--gradiente-y: 50%;
+	--color-principal: rgb(255, 0, 0);
+  --color-secundario: rgb(255, 244, 34);
+	--transparente: rgba(0, 0, 0, 0);
+}
+
 .App {
   font-family: "Arial", sans-serif;
   color: white;
@@ -6,12 +16,15 @@
   background-image: url('/fondo.jpg'); /* Asegúrate de cambiar 'ruta/a/tu/imagen.jpg' por la ruta correcta de tu imagen */
 }
 .content{
-  max-width: 1200px;
-  background-color: #444;
-  margin: 0 auto; // Centra el contenido horizontalmente
+  width: 1200px;
+  background-color: #3f3f3f89;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-header,
+
 footer {
   
   
@@ -19,15 +32,17 @@ footer {
 }
 
 section {
-  margin: 20px;
-  padding: 20px;
   
+  padding: 20px;
+  width: 1000px;
+  margin: 0;
 }
 
-
+.slider,
 .projects,
 .about,
 .skills {
+  
   h2 {
     text-align: center;
   }

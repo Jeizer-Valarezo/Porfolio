@@ -1,42 +1,44 @@
 .profile-container {
   display: flex;
   align-items: center; // Alinea los elementos verticalmente en el centro
-  justify-content: space-between; // Distribuye el espacio entre los elementos
+  
+  justify-content: center; // Distribuye el espacio entre los elementos
   color: white;
 
   .profile-photo,
   .cv {
-    flex: 0 0 150px; // Asigna un ancho fijo de 150px
+    flex: 0 0 200px;// Asigna un ancho fijo de 150px
     display: flex;
     flex-direction: column;
     align-items: center; // Centra los contenidos de cada div verticalmente y horizontalmente
 
     img {
-      width: 150px;
-      height: 150px;
-      background-color: #fff;
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      background-color: #000000;
     }
   }
-
+  
   .profile-content {
     flex-grow: 1; // Ocupa el espacio restante
     display: flex;
     flex-direction: column;
     align-items: center; // Centra los contenidos verticalmente y horizontalmente
 
-    h1,
-    h2,
     p {
-      margin: 0; // Elimina los márgenes por defecto para h1, h2 y p
-      text-align: center; // Centra el texto horizontalmente
-    }
-
-    h2 {
-      color: #b20000; // Color específico para h2
-    }
-
-    p {
+      width: 519px;
       margin-top: 10px; // Espacio superior para los párrafos
+      span{
+        font-weight: bold;
+      }
+      .p{
+        color: var(--color-principal);
+      }
+      .s {
+        color: var(--color-secundario); // Usa el color principal para el texto dentro de span
+      }
+
     }
   }
 

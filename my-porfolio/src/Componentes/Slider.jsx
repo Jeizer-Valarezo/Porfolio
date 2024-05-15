@@ -30,9 +30,9 @@ function Slider() {
     };
 
     return (
-        <section className="container">
+        
             <div className="sliderWrapper">
-                <div className="slider">
+                <div className="slider-images">
                     {imageIds.map(id => (
                         <img
                             key={id}
@@ -50,7 +50,7 @@ function Slider() {
                     ))}
                 </div>
             </div>
-        </section>
+        
     );
 }
 
