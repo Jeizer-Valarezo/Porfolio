@@ -1,46 +1,20 @@
-
-
-@property --angulo-rotacion {
-  syntax: '<angle>';
-  initial-value: 90deg;
-  inherits: true;
-}
-
-@property --gradiente-x {
-  syntax: '<percentage>';
-  initial-value: 100%;
-  inherits: true;
-}
-
-@property --gradiente-y {
-  syntax: '<percentage>';
-  initial-value: 50%;
-  inherits: true;
-}
-
-
-@keyframes rotacionBorde {
-	100% {
-		--angulo-rotacion: 800deg;
-	}
-}
-
 .sliderWrapper {
   position: relative;
   max-width: 1000px;
   margin: 0 auto;
+  border-radius: 50px;
+  overflow: hidden;
 }
+
 .slider-images {
   display: flex;
   aspect-ratio: 16 / 9;
-  overflow-x: hidden;
+  overflow: hidden;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   box-shadow: 0.25rem 0.5rem #21212126;
   border-radius: 0.5rem;
-  border: 0.35rem solid;
-	border-image: conic-gradient(from var(--angulo-rotacion), var(--transparente), var(--color-principal) 0.1turn, var(--color-principal) 0.15turn, var(--transparente) 0.25turn) 30;
-	animation: rotacionBorde var(--duracion-animacion) linear infinite;
+  
 }
 .slider-images img {
   flex: 1 0 100%;
@@ -72,4 +46,5 @@
 }
 .slider-nav a:hover {
   opacity: 100%;
+  background-color: red;
 }

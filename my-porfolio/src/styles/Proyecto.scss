@@ -1,39 +1,94 @@
-.proyecto {
-  display: grid;
-  gap: 10px;
-  color: black;
-  border-radius: 8px;
+.view{
+    position: relative;
+    text-align: center;
+}
 
-  &__imagen {
-    width: 100%;
-    height: auto;
+.mask {
+    height: 100%;
+    top: 0;
+    left: 0;
+    position:absolute;
+    overflow: hidden;
     
-  }
-
-  &__titulo {
-    grid-row: 2 / 3;
-  }
-
-  &__descripcion {
-    grid-row: 3 / 4;
-  }
-
-  &__botones {
-    display: flex;
-    justify-content: space-around;
-    grid-row: 4 / 5;
-  }
 }
 
-.botones a {
-  padding: 10px 20px;
-  text-decoration: none;
-  color: white;
-  background-color: #007bff;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+.__titulo {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 40px 0 0 0;
 }
 
-.botones a:hover {
-  background-color: #0056b3;
+.__descripcion {
+    
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center;
 }
+
+.__info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    margin: 0 1px 1px 0;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000;
+}
+
+.__info:hover {
+    box-shadow: 0 0 5px #000;
+}
+
+.view-first img {
+    transition: all 0.2s linear;
+}
+
+.view-first .mask {
+    opacity: 0;
+    background-color: rgba(219, 127, 8, 0.7);
+    transition: all 0.4s ease-in-out;
+}
+
+.view-first .__titulo {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.view-first .__descripcion {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+
+.view-first:hover .mask {
+    opacity: 1;
+}
+
+.view-first:hover .__titulo,
+.view-first:hover .__descripcion,
+.view-first:hover .__info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.view-first:hover .__descripcion {
+    transition-delay: 0.1s;
+}
+
+.view-first:hover .__info {
+    transition-delay: 0.2s;
+}
+
+.view-first .__info {
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+

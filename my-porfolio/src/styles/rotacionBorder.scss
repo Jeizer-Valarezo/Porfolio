@@ -1,0 +1,40 @@
+:root {
+  --duracion-animacion: 2000ms;
+  --angulo-rotacion-inicial: 0deg;
+  --angulo-rotacion-final: 360deg;
+  --color-principal: rgb(255, 0, 0);
+  --color-secundario: rgb(255, 244, 34);
+  --transparente: rgba(0, 0, 0, 0);
+}
+
+.rotacionBorder {
+  
+  position: relative;
+  
+  padding: 1px; /* Margen para mostrar el borde */
+   /* Oculta el desbordamiento */
+  border: 5px solid  transparent /* Establece un borde transparente de 2px */
+}
+
+.rotacionBorder::before {
+  content: '';
+  position: absolute;
+  top: -2px; /* Ajuste para compensar el ancho del borde */
+  right: -2px; /* Ajuste para compensar el ancho del borde */
+  bottom: -2px; /* Ajuste para compensar el ancho del borde */
+  left: -2px; /* Ajuste para compensar el ancho del borde */
+  border-radius: 1rem; /* Borde circular */
+  background: conic-gradient(
+    from var(--angulo-rotacion),
+    var(--color-principal),
+    var(--transparente)
+  );
+  z-index: 0; /* Coloca el pseudo-elemento detrás del contenido */
+  animation: rotacionBorde var(--duracion-animacion) linear infinite;
+}
+
+@keyframes rotacionBorde {
+  to {
+    transform: rotate(360deg);
+  }
+}
