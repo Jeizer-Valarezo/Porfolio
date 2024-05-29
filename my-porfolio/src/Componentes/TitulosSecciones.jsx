@@ -1,14 +1,19 @@
-import "../styles/TitulosSecciones.scss";
+import styles from "../styles/TitulosSecciones.module.scss";
+import PropTypes from 'prop-types';
 
 function TitulosSecciones({titulo}) {
   return (
-    <div className="wrapper">
-      <div className="top">{titulo}</div>
-      <div className="bottom" aria-hidden="true">
+    <div className={styles.tituloSeccion}>
+      <div className={styles.top}>{titulo}</div>
+      <div className={styles.bottom} aria-hidden="true">
       {titulo}
       </div>
     </div>
   );
 }
+
+TitulosSecciones.propTypes = {
+  titulo: PropTypes.string.isRequired
+};
 
 export default TitulosSecciones;

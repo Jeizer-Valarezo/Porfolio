@@ -1,6 +1,7 @@
 .view{
     position: relative;
     text-align: center;
+    cursor: default;
 }
 
 .mask {
@@ -20,15 +21,15 @@
     font-size: 17px;
     padding: 10px;
     background: rgba(0, 0, 0, 0.8);
-    margin: 40px 0 0 0;
+    margin-top: 10px;
 }
 
 .__descripcion {
-    
+    text-align: left;
     position: relative;
     color: #fff;
     padding: 10px 20px 20px;
-    text-align: center;
+    
 }
 
 .__info {
@@ -52,7 +53,7 @@
 
 .view-first .mask {
     opacity: 0;
-    background-color: rgba(219, 127, 8, 0.7);
+    background-color: rgba(119, 0, 0, 0.781);
     transition: all 0.4s ease-in-out;
 }
 
@@ -88,6 +89,7 @@
 }
 
 .view-first .__info {
+    text-align: center;
     opacity: 0;
     transition: all 0.2s ease-in-out;
 }

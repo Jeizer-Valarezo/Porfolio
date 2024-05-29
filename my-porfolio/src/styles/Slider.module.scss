@@ -20,7 +20,7 @@
   flex: 1 0 100%;
   scroll-snap-align: start;
   object-fit: cover;
-  opacity: 0;
+  
   transition: opacity 0.5s ease-in-out;
 }
 .slider img.active {
@@ -48,3 +48,4 @@
   opacity: 100%;
   background-color: red;
 }
+

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "../styles/Slider.scss";
+import styles from "../styles/Slider.module.scss";
 import imageS1 from "./assets/Project1.webp";
 import imageS2 from "./assets/Project2.webp";
 import imageS3 from "./assets/Project3.webp";
@@ -22,7 +22,7 @@ function Slider() {
         const nextIndex = (currentIndex + 1) % imageIds.length;
         return imageIds[nextIndex];
       });
-    }, 5000);
+    }, 3000);
     return () => clearInterval(interval);
   }, []);
 
@@ -33,20 +33,20 @@ function Slider() {
 
   return (
     <AnimatedBorderWrapper>
-      <div className="sliderWrapper">
-        <div className="slider-images">
+      <div className={styles.sliderWrapper}>
+        <div className={styles["slider-images"]}>
           {imageIds.map(id => (
             <img
               key={id}
               id={id}
               src={images[id]}
               alt={`Imagen ${id}`}
-              className={activeImage === id ? "active" : ""}
+              className={activeImage === id ? styles.active : ""}
               style={{ display: activeImage === id ? "block" : "none" }}
             />
           ))}
         </div>
-        <div className="slider-nav">
+        <div className={styles["slider-nav"]}>
           {imageIds.map(id => (
             <a key={id} href={`#${id}`} onClick={(e) => handleNavClick(e, id)}></a>
           ))}

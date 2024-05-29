@@ -1,9 +1,9 @@
-import '../styles/AnimatedBorder.scss';
+import styles from '../styles/AnimatedBorder.module.scss';
 
 
 // eslint-disable-next-line react/prop-types
 const AnimatedBorderWrapper = ({ children }) => {
-  return <div className="animated-border">{children}</div>;
+  return <div className={styles["animated-border"]}>{children}</div>;
 };
 
 export default AnimatedBorderWrapper;

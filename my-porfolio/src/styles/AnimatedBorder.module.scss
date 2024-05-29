@@ -13,11 +13,11 @@
   left: -50%;
   height: 200%;
   width: 200%;
-  background: linear-gradient(to right, #ffffff00 20%, #ff0000 40%, #ff0000 50%, #ffd900 55%, #ffd90000 70%, #ffffff00 100%);
+  background: linear-gradient(to right, #ff000000 20%, #ff0000 40%, #ffd000 50%, #ffd900 55%, #ffd90000 70%, #ffffff00 100%);
   background-size: 200% auto;
   transform: rotate(-45deg);
   z-index: -1;
-  animation: shine 5s linear infinite;
+  animation: shine 3s linear infinite;
   border-radius: inherit; /* Mantiene el borde redondeado */
 }
 
