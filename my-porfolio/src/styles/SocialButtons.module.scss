@@ -1,0 +1,42 @@
+
+
+i {
+  text-align: center;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  margin: 10px;
+  border-radius: 50%;
+  padding: 15px;
+  box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.35);
+}
+.linkedin,
+.github,
+.globe,
+.file {
+  width: 55px;
+  height: 55px;
+  background-color: var(--BaseColor);
+}
+.file:hover{
+  background-color: var(--CFile);
+  color: var(--CIcon);
+  box-shadow: 0 0 15px var(--CFile), 0 0 45px var(--CFile), 0 0 75px var(--CFile), 0 0 115px var(--CFile);
+}
+.linkedin:hover {
+  background-color: var(--CLinkedin);
+  color: var(--CIcon);
+  box-shadow: 0 0 15px var(--CLinkedin), 0 0 45px var(--CLinkedin), 0 0 75px var(--CLinkedin), 0 0 115px var(--CLinkedin);
+}
+
+.github:hover {
+  background-color: var(--CGithub);
+  color: var(--CIcon);
+  box-shadow: 0 0 15px var(--CGithub), 0 0 45px var(--CGithub), 0 0 75px var(--CGithub), 0 0 115px var(--CGithub);
+}
+
+.globe:hover {
+  background-color: var(--CWeb);
+  color: var(--CIcon);
+  box-shadow: 0 0 15px var(--CWeb), 0 0 45px var(--CWeb), 0 0 75px var(--CWeb),
+    0 0 115px var(--CWeb);
+}

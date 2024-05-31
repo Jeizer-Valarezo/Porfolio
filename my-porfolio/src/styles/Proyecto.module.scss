@@ -1,6 +1,6 @@
 .view{
     position: relative;
-    text-align: center;
+    
     cursor: default;
 }
 
@@ -10,7 +10,7 @@
     left: 0;
     position:absolute;
     overflow: hidden;
-    
+    text-align: center;
 }
 
 .__titulo {
@@ -25,7 +25,8 @@
 }
 
 .__descripcion {
-    text-align: left;
+    text-wrap:balance;
+    text-align: center;
     position: relative;
     color: #fff;
     padding: 10px 20px 20px;
@@ -33,18 +34,13 @@
 }
 
 .__info {
-    display: inline-block;
-    text-decoration: none;
-    padding: 7px 14px;
-    margin: 0 1px 1px 0;
-    background: #000;
-    color: #fff;
-    text-transform: uppercase;
-    box-shadow: 0 0 1px #000;
-}
-
-.__info:hover {
-    box-shadow: 0 0 5px #000;
+    position: absolute;
+    bottom: 0;
+    
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .view-first img {

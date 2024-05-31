@@ -1,5 +1,6 @@
 import styles from "../styles/ProfileData.module.scss";
 import FullStackTitle from "./FullStackTitle";
+import { FileLink} from "../animation_styles/SocialButtons";
 
 function ProfileData() {
   return (
@@ -19,9 +20,7 @@ function ProfileData() {
         
       </div>
       <div className={styles["cv"]}>
-        <button onClick={() => window.open("/Cv.pdf", "_blank")}>
-          Ver mi CV
-        </button>
+        <FileLink/>
       </div>
     </div>
   );

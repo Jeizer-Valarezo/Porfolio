@@ -3,9 +3,10 @@
   grid-template-areas:  "item-a item-a"
                         "item-b item-c";
   gap: 20px; 
-  
+ 
   
   .proyecto {
+    
     &.cardPrincipal {
       grid-area: item-a; 
       
