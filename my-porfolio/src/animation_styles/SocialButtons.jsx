@@ -43,7 +43,7 @@ FileLink.propTypes = {
   link: PropTypes.string
 };
 
-export function GlobeLink({ link = "globe.com" }) {
+export function GlobeLink({ link = "https://porfolio-jeizer-valarezos-projects.vercel.app/" }) {
   return (
     <a href={link} target="_blank"><i className={styles.globe + " fa-solid fa-globe"}></i></a>
   );

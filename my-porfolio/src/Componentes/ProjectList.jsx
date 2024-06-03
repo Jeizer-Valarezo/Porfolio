@@ -57,11 +57,11 @@ function ProjectList() {
         nombre="Dashboard Falcon"
         foto={imageS2}
         github="https://github.com/Jeizer-Valarezo/Dashboard-clone"
-        web="url_del_sitio_web"
+        web="https://falcon-dashboard-jeizer-valarezos-projects.vercel.app/"
       >
         <p>
-          Empleando tecnologías como JavaScript, HTML y CSS, desarrollamos un
-          Dashboard para un cliente con el objetivo de gestionar su negocio,
+          Empleando tecnologías como JavaScript, HTML y CSS, desarrollamos el
+          Dashboard con el objetivo de gestionar un negocio,
           mostrando métricas de ventas, productos y clientes. Mi rol en este
           proyecto fue el de líder de equipo, responsabilizándome de la
           organización, la asignación de tareas y la supervisión del
@@ -74,7 +74,7 @@ function ProjectList() {
         nombre="Nintendo clone"
         foto={imageS3}
         github="https://github.com/Jeizer-Valarezo/Nintendo-clone"
-        web="url_del_sitio_web"
+        web="https://nintendo-clone-jeizer-valarezos-projects.vercel.app/"
       >
         Utilizando los fundamentos de las páginas web con HTML5 y CSS, desde su
         modo pc a su versión para teléfono se recreó estupendamente la página
