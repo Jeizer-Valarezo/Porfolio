@@ -1,17 +1,17 @@
 :root {
-	--duracion-animacion: 10000ms;
-	--angulo-rotacion: 90deg;
-	--gradiente-x: 100%;
-	--gradiente-y: 50%;
-	--color-principal: rgb(255, 0, 0);
+  --duracion-animacion: 10000ms;
+  --angulo-rotacion: 90deg;
+  --gradiente-x: 100%;
+  --gradiente-y: 50%;
+  --color-principal: rgb(255, 0, 0);
   --color-secundario: rgb(255, 244, 34);
-	--transparente: rgba(0, 0, 0, 0);
+  --transparente: rgba(0, 0, 0, 0);
   --CFile: rgb(206, 0, 0);
   --CLinkedin: rgb(0, 162, 255);
   --CGithub: rgb(255, 255, 255);
   --CWeb: rgb(230, 230, 4);
   --BaseColor: rgb(168, 0, 0);
-  --CIcon:rgb(0, 0, 0);
+  --CIcon: rgb(0, 0, 0);
 }
 
 .App {
@@ -19,9 +19,9 @@
   color: white;
   display: flex;
   flex-direction: column;
-  background-image: url('/fondo.jpg'); /* Asegúrate de cambiar 'ruta/a/tu/imagen.jpg' por la ruta correcta de tu imagen */
+  background-image: url("/fondo.jpg"); /* Asegúrate de cambiar 'ruta/a/tu/imagen.jpg' por la ruta correcta de tu imagen */
 }
-.content{
+.content {
   width: 1200px;
   background-color: #3f3f3f89;
   margin: 0 auto;
@@ -30,25 +30,27 @@
   align-items: center;
 }
 
-
 footer {
-  
-  
   text-align: center;
+  background-color: black;
+  width: 100%;
 }
 
 section {
-  
   padding: 20px;
   width: 1000px;
   margin: 0;
 }
-
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .slider,
 .projects,
 .about,
 .skills {
-  
   h2 {
     text-align: center;
   }

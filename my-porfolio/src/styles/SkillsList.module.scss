@@ -1,0 +1,52 @@
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 4 columnas para las tarjetas */
+  gap: 16px; /* Espacio de 8px entre las tarjetas */
+  cursor: default;
+}
+
+.card {
+  background-color: rgb(73,0,0);
+  padding: 10px;
+  text-align: center;
+  display: grid;
+  border-radius: 50px;
+  grid-template-rows: auto 1fr; /* Una fila para el título y otra para los iconos */
+}
+
+.title {
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(255, 208, 0);
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3,1fr);
+  
+  gap: 20px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s;
+}
+
+.icon img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+.icon:hover {
+  transform: scale(1.1);
+}
+

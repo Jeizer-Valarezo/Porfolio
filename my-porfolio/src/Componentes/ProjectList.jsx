@@ -12,8 +12,8 @@ function ProjectList() {
         clase="cardPrincipal "
         nombre="Animal Shelter"
         foto={imageS1}
-        github="url_del_repositorio_github"
-        web="url_del_sitio_web"
+        github="https://github.com/tommysoeder/Pet-Shop"
+        web="https://pet-shop-813q.vercel.app/"
       >
         <p>
           Utilizando tecnologías de vanguardia como React, Vite y TypeScript,

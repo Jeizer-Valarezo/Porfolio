@@ -22,11 +22,11 @@ function App() {
           <ProjectList />
         </section>
         <section className="about">
-        <TitulosSecciones titulo="Sobre mi" />
+          <TitulosSecciones titulo="Sobre mi" />
           <AboutContent />
         </section>
         <section className="skills">
-          <TitulosSecciones titulo="Tecnologias"/>
+          <TitulosSecciones titulo="Tecnologias" />
           <SkillsList />
         </section>
         <footer>
