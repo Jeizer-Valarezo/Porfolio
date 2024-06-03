@@ -56,7 +56,7 @@ function ProjectList() {
         clase="cardSecundaria1"
         nombre="Dashboard Falcon"
         foto={imageS2}
-        github="url_del_repositorio_github"
+        github="https://github.com/Jeizer-Valarezo/Dashboard-clone"
         web="url_del_sitio_web"
       >
         <p>
@@ -73,7 +73,7 @@ function ProjectList() {
         clase="cardSecundaria2 "
         nombre="Nintendo clone"
         foto={imageS3}
-        github="url_del_repositorio_github"
+        github="https://github.com/Jeizer-Valarezo/Nintendo-clone"
         web="url_del_sitio_web"
       >
         Utilizando los fundamentos de las páginas web con HTML5 y CSS, desde su
