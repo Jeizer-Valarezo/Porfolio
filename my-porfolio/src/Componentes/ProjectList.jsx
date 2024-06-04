@@ -60,12 +60,9 @@ function ProjectList() {
         web="https://falcon-dashboard-jeizer-valarezos-projects.vercel.app/"
       >
         <p>
-          Empleando tecnologías como JavaScript, HTML y CSS, desarrollamos el
+          JavaScript, HTML y CSS, desarrollamos el
           Dashboard con el objetivo de gestionar un negocio,
-          mostrando métricas de ventas, productos y clientes. Mi rol en este
-          proyecto fue el de líder de equipo, responsabilizándome de la
-          organización, la asignación de tareas y la supervisión del
-          cumplimiento de los plazos. Este proyecto se basa en la página de
+          mostrando métricas de ventas, productos y clientes. Este proyecto se basa en la página de
           Falcon Web.
         </p>
       </Proyecto>
@@ -76,8 +73,8 @@ function ProjectList() {
         github="https://github.com/Jeizer-Valarezo/Nintendo-clone"
         web="https://nintendo-clone-jeizer-valarezos-projects.vercel.app/"
       >
-        Utilizando los fundamentos de las páginas web con HTML5 y CSS, desde su
-        modo pc a su versión para teléfono se recreó estupendamente la página
+        Basándonos en Nintendo y utilizando los fundamentos de las páginas web con HTML5 y CSS se recreó la página desde su
+        modo PC y agregando su versión móvil.
         web de Nintendo.
       </Proyecto>
     </div>

@@ -12,11 +12,19 @@
     align-items: center; // Centra los contenidos de cada div verticalmente y horizontalmente
 
     img {
-      border-radius: 50%;
-      width: 200px;
-      height: 200px;
-      background-color: #000000;
+      margin-left: 10px;
+      width: 180px;
+      height: 180px;
     }
+  }
+  .profile-photo {
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px solid black;
+    background-color: rgb(124, 0, 0);
+    width: 200px;
+    height: 200px;
+    justify-content: end;
   }
 
   .profile-content {
@@ -38,7 +46,9 @@
         color: var(--color-principal);
       }
       .s {
-        color: var(--color-secundario); // Usa el color principal para el texto dentro de span
+        color: var(
+          --color-secundario
+        ); // Usa el color principal para el texto dentro de span
       }
     }
   }

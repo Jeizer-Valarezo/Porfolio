@@ -6,7 +6,7 @@ function ProfileData() {
   return (
     <div className={styles["profile-container"]}>
       <div className={styles["profile-photo"]}>
-        <img src="path_to_your_photo.jpg" alt="Foto de Mauricio" />
+        <img src="./JeizerPhoto.png" alt="Foto de Jeizer" />
       </div>
       <div className={styles["profile-content"]}>
         <FullStackTitle />

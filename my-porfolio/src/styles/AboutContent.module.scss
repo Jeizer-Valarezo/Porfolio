@@ -3,18 +3,28 @@
   flex-direction: column;
   align-items: center;
   max-width: 70ch;
-  img {
+  .profile-photo {
+    display: flex;
+    overflow: hidden;
     border-radius: 50%;
+    border: 5px solid black;
+    background-color: rgb(124, 0, 0);
     width: 200px;
     height: 200px;
-    background-color: #000000;
+    align-items: end;
+    img {
+      margin-left: 10px;
+      width: 180px;
+      height: 180px;
+    }
   }
-  p{
+
+  p {
     padding: 20px;
   }
-  .correo{
+  .correo {
     font-weight: bold;
     font-size: 30px;
-    color:yellow;
+    color: yellow;
   }
 }
