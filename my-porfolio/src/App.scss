@@ -1,3 +1,4 @@
+/* Variables de raíz */
 :root {
   --duracion-animacion: 10000ms;
   --angulo-rotacion: 90deg;
@@ -14,6 +15,7 @@
   --CIcon: rgb(0, 0, 0);
 }
 
+/* Estilos generales de la aplicación */
 .App {
   font-family: "Cactus Classical Serif", serif;
   color: white;
@@ -21,8 +23,11 @@
   flex-direction: column;
   background-image: url("/fondo.jpg"); /* Asegúrate de cambiar 'ruta/a/tu/imagen.jpg' por la ruta correcta de tu imagen */
 }
+
+/* Contenido principal */
 .content {
   width: 1200px;
+  min-width: 420px; 
   background-color: #3f3f3f89;
   margin: 0 auto;
   display: flex;
@@ -30,23 +35,30 @@
   align-items: center;
 }
 
+/* Sección de pie de página */
 footer {
   text-align: center;
   background-color: black;
   width: 100%;
 }
 
+/* Secciones generales */
 section {
+  min-width: 400px; 
   padding: 20px;
   width: 1000px;
   margin: 0;
 }
+
+/* Sección 'about' */
 .about {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
+/* Estilos comunes para secciones específicas */
 .slider,
 .projects,
 .about,
@@ -56,8 +68,42 @@ section {
   }
 }
 
+/* Información de contacto */
 .contact-info {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .content {
+    width: 100%; /* Ajustar el tamaño máximo para pantallas más pequeñas */
+    padding: 1rem; /* Añadir padding para espaciar un poco en pantallas pequeñas */
+  }
+
+  section {
+    width: 90%; /* Ajustar el tamaño de las secciones */
+    padding: 10px; /* Ajustar padding para pantallas pequeñas */
+  }
+
+  .contact-info {
+    flex-direction: column; /* Ajustar la dirección del contenido de contacto */
+    align-items: flex-start;
+  }
+}
+
+/* Para pantallas aún más pequeñas, como teléfonos */
+@media (max-width: 768px) {
+  .content {
+    padding: 0.5rem; /* Más padding para pantallas muy pequeñas */
+  }
+
+  section {
+    width: 100%;
+  }
+
+  .contact-info {
+    flex-direction: column; /* Ajustar la dirección del contenido de contacto */
+    align-items: flex-start;
+  }
 }

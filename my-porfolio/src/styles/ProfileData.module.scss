@@ -55,12 +55,11 @@
 
   @media (max-width: 1200px) {
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
     .profile-photo,
     .cv {
       order: -1; // Mueve estos elementos al principio
       flex: 0 0 auto; // Permite que el tamaño se ajuste al contenido
-      width: 100%; // Ocupa todo el ancho disponible
     }
 
     .profile-content {
