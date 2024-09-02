@@ -21,13 +21,14 @@
   color: white;
   display: flex;
   flex-direction: column;
-  background-image: url("/fondo.jpg"); /* Asegúrate de cambiar 'ruta/a/tu/imagen.jpg' por la ruta correcta de tu imagen */
+  background-image: url("/fondo.jpg"); 
+  min-width: 520px; /* Asegúrate de cambiar 'ruta/a/tu/imagen.jpg' por la ruta correcta de tu imagen */
 }
 
 /* Contenido principal */
 .content {
   width: 1200px;
-  min-width: 420px; 
+  min-width: 520px; 
   background-color: #3f3f3f89;
   margin: 0 auto;
   display: flex;
