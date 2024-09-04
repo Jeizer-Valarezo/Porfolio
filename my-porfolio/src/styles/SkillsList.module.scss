@@ -57,7 +57,7 @@
 }
 
 /* Para pantallas aún más pequeñas, como teléfonos */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .skills-list {
     grid-template-columns: 1fr; /* 1 columna para pantallas muy pequeñas */
     gap: 8px; /* Ajustar espacio entre las tarjetas */
