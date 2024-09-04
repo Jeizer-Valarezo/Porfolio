@@ -3,24 +3,19 @@
   grid-template-areas:  "item-a item-a"
                         "item-b item-c";
   gap: 20px; 
- 
   
   .proyecto {
     
     &.cardPrincipal {
       grid-area: item-a; 
-      
-      
     }
 
     &.cardSecundaria1 {
       grid-area: item-b;
-      
     }
 
     &.cardSecundaria2 {
       grid-area: item-c;
-      
     }
 
     img {
@@ -29,5 +24,12 @@
       max-width: 100%; // Ajusta el ancho máximo de la imagen
       height: 100%; // Permite que la altura se ajuste automáticamente
     }
+  }
+}
+
+// Media query para pantallas de menos de 900px
+@media (max-width: 900px) {
+  .project-list {
+    font-size: 10px;
   }
 }
